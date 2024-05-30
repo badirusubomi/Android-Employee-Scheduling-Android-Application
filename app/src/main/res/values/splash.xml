@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Scheduler.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#F9F6EE</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/avd_logoanimation</item>
+        <!-- <item name="android:windowSplashScreenBrandingImage">@drawable/logobrand</item> -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.SchedulerApp</item>
+    </style>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeInfoActivity">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center_vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textViewEmployeeId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+        <!-- First name -->
+        <TextView
+            android:id="@+id/textViewFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+        <!-- Last name -->
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+        <!-- Phone -->
+<!--        <TextView-->
+<!--            android:id="@+id/textViewPhone"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Phone"-->
+<!--            android:layout_weight="2"-->
+<!--            android:textColor="#000000"-->
+<!--            android:gravity="center" />-->
+
+<!--        &lt;!&ndash; Email &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/textViewEmail"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Email"-->
+<!--            android:layout_weight="3"-->
+<!--            android:textColor="#000000"-->
+<!--            android:gravity="center" />-->
+    </LinearLayout>
+
+    <!-- ListView -->
+
+    <!-- Plus Button -->
+    <ListView
+        android:id="@+id/listViewEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/addEmployee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/baseline_add_24"
+        app:backgroundTint="#336699"
+        app:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    &lt;!&ndash; Delete button &ndash;&gt;-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/btnDelete"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="-120dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:src="@drawable/baseline_delete_24"-->
+<!--        app:elevation="6dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/addEmployee"-->
+<!--        app:backgroundTint="#336699" />-->
+
+    <!-- Refresh button -->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/btnRefresh"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:src="@drawable/baseline_refresh_24"-->
+<!--        app:backgroundTint="#336699"-->
+<!--        app:elevation="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:ignore="MissingConstraints" />-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/btnDelete"-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
